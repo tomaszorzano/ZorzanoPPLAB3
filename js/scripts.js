@@ -129,7 +129,7 @@ function crearThead(item) {
         if (key !== "id") 
         {
             const th = document.createElement('th');
-            th.style.backgroundColor = "Green";
+            th.style.backgroundColor = "orange";
             th.textContent = key;
             tr.appendChild(th);
         }
@@ -170,7 +170,7 @@ function limpiarForm(frm)
     frm.reset();
     document.getElementById("btnEliminar").classList.add("oculto");
     document.getElementById("btnCancelar").classList.add("oculto");
-    document.getElementById("btnSubmit").value = "Alta anuncio";
+    document.getElementById("btnSubmit").value = "Save";
     document.forms[0].id.value="";
 }
 function cargarFrm(id) {
@@ -187,7 +187,9 @@ function cargarFrm(id) {
    
     form.id.value=id;
     document.getElementById("btnSubmit").value = "Modificar";
+   
     document.getElementById("btnEliminar").classList.remove("oculto");
     document.getElementById("btnCancelar").classList.remove("oculto");
+    
 
 }
